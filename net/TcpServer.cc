@@ -15,6 +15,15 @@ TcpServer::~TcpServer()
 }
 
 void TcpServer::Start(short port) {
+#ifdef _WIN32
+    WSADATA wsaData;
+    int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
+    if (iResult != NO_ERROR) {
+        wprintf(L"WSAStartup failed with error: %ld\n", iResult);
+        return;
+    }
+#endif
+
     if (!m_eBase) {
         m_eBase = event_base_new();
     }

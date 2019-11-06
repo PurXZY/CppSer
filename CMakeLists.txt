@@ -15,6 +15,7 @@ ENDIF()
 
 add_definitions("-Wall -std=c++11 -g -DDEBUG")
 add_subdirectory(net lib)
+add_subdirectory(proto proto)
 
 aux_source_directory(. SRC_LIST)
 add_executable(test ${SRC_LIST})

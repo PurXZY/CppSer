@@ -133,12 +133,6 @@
 		<Unit filename="D:/ClionProject/CppSer/main.cc">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="D:/ClionProject/CppSer/net/MsgParser.cpp">
-			<Option target="net"/>
-		</Unit>
-		<Unit filename="D:/ClionProject/CppSer/net/MsgParser.h">
-			<Option target="net"/>
-		</Unit>
 		<Unit filename="D:/ClionProject/CppSer/net/TcpConnection.cc">
 			<Option target="net"/>
 		</Unit>
