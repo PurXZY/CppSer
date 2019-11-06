@@ -17,4 +17,7 @@ add_subdirectory(net lib)
 aux_source_directory(. SRC_LIST)
 add_executable(test ${SRC_LIST})
 
-target_link_libraries(test event net wsock32)
+target_link_libraries(test event net)
+IF (WIN32)
+    target_link_libraries(wsock32)
+ENDIF()

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="test" targetName="test" />
       <config projectName="test" targetName="net" />
+      <config projectName="test" targetName="test" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,8 +15,8 @@
     <list default="true" id="6702a7e7-7af2-4edd-bfe0-78059467ae7c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cc" beforeDir="false" afterPath="$PROJECT_DIR$/main.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/net/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/libnet.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/libnet.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/build/test.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/net/TcpServer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/net/TcpServer.cc" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,6 +102,7 @@
       <workItem from="1573006367194" duration="1424000" />
       <workItem from="1573008785010" duration="57000" />
       <workItem from="1573008875067" duration="1997000" />
+      <workItem from="1573011080241" duration="481000" />
     </task>
     <servers />
   </component>
@@ -126,7 +127,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/net/TcpServer.cc</url>
-          <line>18</line>
+          <line>21</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
