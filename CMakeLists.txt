@@ -15,13 +15,13 @@ ENDIF()
 
 add_definitions("-Wall -std=c++11 -g -DDEBUG")
 add_subdirectory(net lib)
-add_subdirectory(proto proto)
+add_subdirectory(proto protoData)
 
 aux_source_directory(. SRC_LIST)
 add_executable(test ${SRC_LIST})
 
 IF (WIN32)
-    target_link_libraries(test event net wsock32)
+    target_link_libraries(test event net wsock32 proto)
 else()
-    target_link_libraries(test event net)
+    target_link_libraries(test event net proto)
 ENDIF()

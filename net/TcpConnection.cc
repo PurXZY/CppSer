@@ -87,5 +87,10 @@ void TcpConnection::SendData()
 void TcpConnection::HandleMsg(unsigned short msgId, char *data)
 {
     std::cout << "msgId: " << msgId << std::endl;
-    if (msgId == )
+    if (msgId == usercmd::LoginReq)
+    {
+        usercmd::LoginC2SMsg msg;
+        msg.ParseFromString(data);
+        std::cout << "msg name: " << msg.name() << std::endl;
+    }
 }
