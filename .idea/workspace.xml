@@ -17,7 +17,7 @@
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib/libnet.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/libnet.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/build/test.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net/TcpServer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/net/TcpServer.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/build/test.exe" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
