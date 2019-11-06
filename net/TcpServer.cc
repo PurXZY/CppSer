@@ -4,8 +4,7 @@
 #include "TcpConnection.h"
 #ifdef _WIN32
 #include <winsock.h>
-#endif
-#ifdef _UNIX
+#else
 #include <arpa/inet.h>
 #endif
 
