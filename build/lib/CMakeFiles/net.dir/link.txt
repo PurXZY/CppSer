@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libnet.a  CMakeFiles/net.dir/MsgParser.cpp.o CMakeFiles/net.dir/TcpConnection.cc.o CMakeFiles/net.dir/TcpServer.cc.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libnet.a

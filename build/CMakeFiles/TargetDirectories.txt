@@ -1,6 +1,0 @@
-/Users/pur/Documents/CppPro/build/CMakeFiles/rebuild_cache.dir
-/Users/pur/Documents/CppPro/build/CMakeFiles/edit_cache.dir
-/Users/pur/Documents/CppPro/build/CMakeFiles/test.dir
-/Users/pur/Documents/CppPro/build/lib/CMakeFiles/rebuild_cache.dir
-/Users/pur/Documents/CppPro/build/lib/CMakeFiles/edit_cache.dir
-/Users/pur/Documents/CppPro/build/lib/CMakeFiles/net.dir
