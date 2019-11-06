@@ -11,4 +11,4 @@ CTestTestfile.cmake
 _deps
 *.o
 .DS_Store
-.idea
+.idea/
