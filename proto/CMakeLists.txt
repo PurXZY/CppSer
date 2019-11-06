@@ -1,0 +1,6 @@
+find_package(Protobuf REQUIRED)
+PROTOBUF_GENERATE_CPP(PROTOSRCS PROTOHDRS base.proto)
+message(STATUS ${PROTOSRCS})
+add_library(proto STATIC ${PROTOSRCS} ${PROTOHDRS}) 
+target_link_libraries(proto protobuf) 
+target_include_directories(proto PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
