@@ -24,7 +24,6 @@ TcpConnection::~TcpConnection()
 
 void TcpConnection::read_event_cb(bufferevent *event, void *arg)
 {
-    auto *conn = reinterpret_cast<TcpConnection *>(arg);
 	auto *input = bufferevent_get_input(event);
     size_t recvLen = evbuffer_get_length(input);
     // 接收缓冲区所有数据
@@ -57,6 +56,8 @@ void TcpConnection::read_event_cb(bufferevent *event, void *arg)
     evbuffer_remove(input, msgData, pkgSize);
     unsigned short msgId = msgData[5];
     msgId |= msgData[4] << 8;
+
+    auto *conn = reinterpret_cast<TcpConnection *>(arg);
     conn->HandleMsg(msgId, msgData + TcpConnection::MSG_HEADER_SIZE);
     free(msgData);
 
@@ -66,6 +67,11 @@ void TcpConnection::read_event_cb(bufferevent *event, void *arg)
     {
         read_event_cb(event, arg);
     }
+    else
+    {
+        bufferevent_setwatermark(event, EV_READ, TcpConnection::MSG_HEADER_SIZE, 0);
+    }
+    
 }
 
 void TcpConnection::error_event_cb(bufferevent* event, short e, void *arg)
