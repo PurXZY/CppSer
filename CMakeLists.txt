@@ -14,7 +14,7 @@ ENDIF()
 
 
 add_definitions("-Wall -std=c++11 -g -DDEBUG")
-add_subdirectory(net lib)
+add_subdirectory(net libNet)
 add_subdirectory(proto protoData)
 
 aux_source_directory(. SRC_LIST)

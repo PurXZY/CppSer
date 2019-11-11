@@ -1,7 +1,7 @@
 #include <iostream>
 #include "TcpConnection.h"
 #include "TcpServer.h"
-#include "../proto/base.pb.h"
+#include "../build/protoData/base.pb.h"
 
 TcpConnection::TcpConnection(event_base *base, evutil_socket_t fd)
 {
